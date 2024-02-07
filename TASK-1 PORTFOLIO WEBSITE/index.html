@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/293d5bbcbe.js" crossorigin="anonymous"></script>
+</head>       <!-------inside scrip paste kit tool link from fontawsome website------>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Engineer</p>
+            <h1>Hi, I'm <span>Sanjana<br>S.A</span> From Bengaluru</h1>
+        </div>
+    </div>
+</div>
+<!-------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>    
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a Student persuing Computer Science Engg. at CMR Institute of Technology, Currently in 5th sem.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web/App development</span><br> Web App development-Anroid/iOS apps</li>
+                        <li><span>Programming and Coding</span><br> Python (Intermidiate)<br>HTML, CSS, JavaScript (Intermidiate)</li>
+                        <li><span>Soft-Skills</span><br>Creativity, Communication and Teamwork</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>5th sem cs engg Student</li>
+                        <li><span>2022 - 2023</span><br>Gdsc - core team</li>
+                        <li><span>2021 - 2022</span><br>Coding ninjas club - Design Lead </li>
+                        <li><span>-----</span><br>-----</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id="education">
+                    <ul>
+                        <li><span>Current</span><br>Student at CMRIT B'lore</li>
+                        <li><span>2019</span><br>Undergraduate degree at Deeksha indiranagar</li>
+                        <li><span>2017</span><br>Sslc at HAL girls high school<br>HTML, CSS, JavaScript (Intermidiate)</li>
+                        <li><span>-----</span><br>-----</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>S/W Dev.</h2>
+                <p>Refers to a set of computer science activities dedicated to the process of creating, designing, deploying and supporting software.</p>
+                    <a href="https://www.ibm.com/topics/software-development">Learn more</a>
+            </div>     <!--------DULICATE TO ADD SECTION-------->
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Is the design of any user interfaces, in which usability is just as important as the appearance.Includes wireframe design etc.</p>
+                    <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/">Learn more</a>
+            </div>         
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>FSD</h2>
+                <p>Refers to the end-to-end application software development, including the front end and back end. The front end consists of the user interface, and the back end takes care of the business logic and application workflows.</p>
+                    <a href="https://www.simplilearn.com/skills-required-to-become-a-full-stack-developer-article">Learn more</a>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Hobbies & Interests</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/travel2.png">
+                <div class="layer">
+                    <h3>Traveling</h3>
+                    <p>click here to know more!</p>
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vTWWls47btbZTf7VfU7PFQo5Go_ZmzfTfI4_r_E5GJGe3rRyWiMlJQzHb00CClAlW1k6jB6CH8x4152/pub"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/art (2).png">
+                <div class="layer">
+
+                    <h3>I'm a passtime artist!</h3>
+                    <p>click here to visit my insta art page & know more!</p>
+                        <a href="https://www.instagram.com/falselyperfectartist/?igshid=ZDdkNTZiNTM%3D"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/photo.png">
+                <div class="layer">
+                    <h3>Photography</h3>
+                    <p>click here to visit my insta photography page & know more!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------contact------------>
+<div id="contact">
+    <div class="container">
+       <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sanjanaskak@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sanjana-s-a-b507b5203/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://instagram.com/sanjanaskak"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.link/q4tkww"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>  <!-----attach downloadable file to button link------>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+               <input type="text" name="Name" placeholder="Your Name" required>
+               <input type="email" name="Email" placeholder="Your Email" required>
+               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+               <button type="submit" class="btn btn2">Submit</button> 
+            </form>
+            <!-------reset form after submission----->
+            <span id="msg"></span>
+        </div>
+
+       </div> 
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sanjana | All Rights Reserved</p>
+    </div>
+</div>
+
+
+<!------------------SCRIPT---------------------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>   //-----addind var for sidemenu------//
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){   //calls function//
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+
+ <!--------https://github.com/jamiewilson/form-to-google-sheets------>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxjbskkBNc7w2kA3nb7_oyp84GDXV_aQvYtL6BJbyIEXAIcuLdVlifTIHYQwJ7a3Xnb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)  //----after 5 sec msg will be removed-----//
+            form.reset()
+        })  
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>   
+</body>
+</html>
